@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket List 2021</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <section class="bucket_list">
+        <header class="title">
+            BUCKET LIST 2021 ⭐️
+        </header>
+        <ul class="navbar">
+            <li><button class="navbar__menu">All</button></li>
+            <li><button class="navbar__menu">Self-improvement 📚</button></li>
+            <li><button class="navbar__menu">Travel ✈️</button></li>
+            <li><button class="navbar__menu">Hobby 🏄🏻‍♀️</button></li>
+            <li><button class="navbar__menu">Money / Saving 💵</button></li>
+            <li><button class="navbar__menu">Relationship ❤️</button></li>
+            <li><button class="navbar__menu">etc...</button></li>    
+        </ul>
+        <div class="navbar__divider"></div>
+        <ul class="items">
+            <li class="item__row">
+                <div class="item">
+                    <input type="checkbox" name="checkbox">
+                    <div class="type__box">
+                        <button class="type__toggle">type</button>
+                        <div class="type__list">
+                            <option class="type__option">📚</option>
+                            <option class="type__option">✈️</option>
+                            <option class="type__option">🏄🏻‍♀️</option>
+                            <option class="type__option">💵</option>
+                            <option class="type__option">❤️</option>
+                            <option class="type__option">etc</option>
+                        </div>
+                    </div>
+                    <span class="item__name">create bucket list</span>
+                    <button class="item__delete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+                <div class="item__divider"></div>
+            </li>
+        </ul>
+        <footer class="footer">
+            <input type="text" class="footer__input">
+            <button class="footer__button">
+                <i class="fas fa-plus"></i>
+            </button>
+        </footer>
+    </section>
+</body>
+</html>
