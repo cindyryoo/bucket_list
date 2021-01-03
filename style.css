@@ -54,8 +54,7 @@ button {
 }
 
 .bucket_list {
-  width: 25rem;
-  height: 39.4em;
+  width: 400px;
   margin: auto;
   margin-top: 4em;
   border: 1px solid var(--color-darkbrown);
@@ -66,7 +65,7 @@ button {
 }
 
 .title {
-  height: 80px;
+  height: 48px;
   color: var(--color-white);
   font-weight: var(--weight-semi-bold);
   background: rgb(131, 58, 180);
@@ -78,7 +77,7 @@ button {
   );
   font-size: xx-large;
   border-radius: 20px 20px 0 0;
-  padding: 16px 16px;
+  padding: 8px;
 }
 
 .navbar {
@@ -108,17 +107,17 @@ button {
   height: 2px;
   background-color: lightgrey;
 }
-.type__box {
-  position: relative;
-  z-index: 1;
+.input-box {
+  display: flex;
 }
 .type__toggle {
-  width: 55px;
-  height: 40px;
+  width: 50px;
+  height: 35px;
   padding: 4px;
+  background-color: var(--color-white);
+  color: var(--color-light-grey);
   font-size: var(--font-regular);
   border: 1px solid lightgrey;
-  border-radius: var(--size-border-radius);
   transition: all 300ms ease-in;
 }
 
@@ -127,14 +126,13 @@ button {
 }
 .type__list {
   position: absolute;
+  display: flex;
   z-index: 2;
-  margin: 5px;
   max-height: 0;
   overflow: hidden;
   font-size: var(--font-small);
-  margin: 5px;
   border: 1px solid transparent;
-  border-radius: var(--size-border-radius);
+  transform: translateY(-40px);
   transition: border-color 200ms ease-in, padding 200ms ease-in,
     max-height 200ms ease-in, box-shadow 200ms ease-in;
 }
@@ -160,19 +158,15 @@ button {
 
 .items {
   height: 400px;
-  width: 100%;
   overflow-y: auto;
-  ::-webkit-scrollbar {
-    width: 5.2px;
-  }
 }
 
 .item {
   display: flex;
-  align-items: baseline;
+  justify-content: space-between;
   line-height: 1;
   font-size: var(--font-regular);
-  margin: 8px;
+  padding: 8px 32px;
 }
 .item__name {
   text-align: left;
@@ -211,6 +205,11 @@ button {
 
 .footer__input {
   font-size: var(--font-regular);
+  width: 100%;
+  height: 35px;
+  outline: none;
+  border: none;
+  padding: 0 16px;
 }
 
 .footer__button {
